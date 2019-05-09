@@ -1,3 +1,3 @@
 trap "gitlab-runner unregister --all-runners" SIGINT SIGTERM
-gitlab-runner register --non-interactive --executor=docker --locked=false
+gitlab-runner register --non-interactive --executor=shell --locked=false
 gitlab-runner "$@"
